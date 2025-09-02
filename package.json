@@ -24,8 +24,7 @@
     "deploy": "gh-pages -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build"
   },
 >>>>>>> b786ead (Fix index.html location and package updates)
   "dependencies": {
