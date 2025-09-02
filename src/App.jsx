@@ -453,7 +453,7 @@ function Chat({ user }) {
   const [messages, setMessages] = useState([
     {
       sender: "AI",
-      text: `നമസ്കാരം ${user.name}! 🙏 നിങ്ങളുടെ മലയാളം പ്രമാണം അപ്‌ലോഡ് ചെയ്ത് എന്നോട് ചോദ്യങ്ങൾ ചോദിക്കാവുന്നതാണ്. / Hello! You can upload your Malayalam document and ask me questions about it.`,
+      text: `നമസ്കാരം ${user.name}! 🙏 നിങ്ങളുടെ മലയാളം PDF അപ്‌ലോഡ് ചെയ്ത് എന്നോട് ചോദ്യങ്ങൾ ചോദിക്കാവുന്നതാണ്. / Hello! You can upload your Malayalam document and ask me questions about it.`,
       timestamp: new Date().toLocaleTimeString()
     }
   ]);
@@ -481,7 +481,7 @@ function Chat({ user }) {
         setIsProcessing(false);
         const readyMessage = {
           sender: "AI",
-          text: `✅ "${file.name}" തയ്യാർ! ഇപ്പോൾ നിങ്ങൾക്ക് ഈ പ്രമാണത്തെക്കുറിച്ച് ചോദ്യങ്ങൾ ചോദിക്കാം. 🤖 / Document ready! You can now ask questions about this document.`,
+          text: `✅ "${file.name}" തയ്യാർ! ഇപ്പോൾ നിങ്ങൾക്ക് ഈ PDF-ക്കുറിച്ച് ചോദ്യങ്ങൾ ചോദിക്കാം. 🤖 / Document ready! You can now ask questions about this document.`,
           timestamp: new Date().toLocaleTimeString()
         };
         setMessages(prev => [...prev, readyMessage]);
